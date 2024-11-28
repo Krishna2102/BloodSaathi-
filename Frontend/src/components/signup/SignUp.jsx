@@ -151,7 +151,7 @@ export default function Signup() {
         
         <SubmitButton label="Sign Up" />
         <div className="mt-4 text-center">
-          Already have an account? <Link to="/login" className="text-blue-500">Log in</Link>
+          Already have an account? <Link to="/signin" className="text-blue-500">Log in</Link>
         </div>
       </FormContainer>
       <Footer />

@@ -11,6 +11,7 @@ export default function Navbar() {
   useEffect(() => {
     // Check if the user is logged in by checking for a token in local storage
     const token = localStorage.getItem("token");
+    const role=localStorage.getItem("role");
     if (token) {
       setIsLoggedIn(true);
       // Fetch profile picture URL if available
@@ -28,7 +29,7 @@ export default function Navbar() {
 
   const handleViewProfile = () => {
     // Redirect to user dashboard
-    window.location.href = "/userdashboard";
+    window.location.href = `/${role}dashboard`;
   };
 
   return (
